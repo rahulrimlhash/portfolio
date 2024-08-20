@@ -874,6 +874,19 @@ a:hover {
   font-size: 1.4rem;
 }
 
+.col-md-4-flex {
+
+  width: 45%;
+ }
+
+ .flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+ }
+
 .testimonial-box .comit {
   font-size: 2rem;
   color: #000;
@@ -1270,10 +1283,64 @@ footer .credits a {
   }
 }
 
+.ico-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media all and (max-width:1080px){
+  .flex-row{
+    flex-direction: column !important;
+    gap: 60px;
+  }
+
+  .flex-row  .col-lg-3{
+    flex: 0 0 90%;
+        max-width: 90%;
+  }
+}
+
 @media (min-width: 992px) {
+
+  .service-content {
+    min-height: 280px;
+  }
   .testimonial-box .description {
     padding: 0 8rem;
   }
+}
+
+@media all and (max-width: 768px) {
+
+  .col-md-4-flex {
+
+    width: 80%;
+   }
+}
+
+@media all and (max-width: 480px) {
+
+  .col-md-4-flex {
+
+    width: 95%;
+   }
+}
+
+
+@media all and (max-width: 992px) {
+
+  .service-content {
+    min-height: 250px;
+  }
+  
 }
 
 @media (min-width: 1200px) {
